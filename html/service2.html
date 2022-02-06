@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+        <script src="./js/jquery-3.6.0.slim.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" href="./css/evenements.css">
+      
+ </head>
+ <body>
+       <!--La partie contenant le tableau des informations-->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><div class="d-flex flex-row align-items-center pb-2">#</div></th>
+            <th scope="col"colspan="2">
+              <div class="d-flex flex-row align-items-center">
+                <div class="mr-3">Service2</div>
+              </div>
+            </th>
+           
+            <th scope="col">
+              <div class=" d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-success add">Ajouter</button>
+              </div>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row"><span>1</span></th>
+            <td class="label"> Marketing et communication interne</td>
+            <td class="resume">De par notre expérience, on peut apporter nos aide aux entreprises dans l’élaboration des politiques de voyages 
+                (norme des dépenses, gestion des indemnités de subsistance, etc.) et dans la manière correcte et efficace de les communiquer aux employés.</td>
+            <td class="d-flex justify-content-center">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <button type="button" class="btn btn-outline-danger remove">Supprimer</button>
+                <button type="button" class="btn btn-outline-secondary edit">Editer</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><span>2</span></th>
+            <td class="label">Technologie</td>
+            <td class="resume">Un usage adéquat et constamment actualisé de la technologie est essentiel, non seulement pour solliciter et comparer les services de voyages (billets, logement, etc.)
+                 mais aussi pour d’autres aspects aussi divers que la gestion de la facturation ou la localisation des voyageurs en situations extrêmes.</td>
+            <td class="d-flex justify-content-center">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <button type="button" class="btn btn-outline-danger remove">Supprimer</button>
+                <button type="button" class="btn btn-outline-secondary edit">Editer</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><span>3</span></th>
+            <td class="label">Services de loisirs</td>
+            <td class="resume">on propose aux employés des entreprises pour lesquelles elles travaillent et à leurs proches des réductions directes ou de meilleures offres sur les voyages et activités de loisirs.
+                En assumant la gestion intégrale des voyages corporatifs, on arrive à donner une plus-value à notre service, chose fondamentale pour répondre aux attentes et aux besoins des entreprises.</td>
+            <td class="d-flex justify-content-center">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <button type="button" class="btn btn-outline-danger remove">Supprimer</button>
+                <button type="button" class="btn btn-outline-secondary edit">Editer</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+            <!--La partie add qui contient les zone de saisie necessaire pour ajouter une nouvelle ligne d'information-->
+      <div class="addevent">
+        <form>
+          <label > Nom du service : </label> <input type="text" class="form-control name"><br>
+          <label > Information :</label> <textarea class="form-control" id="description" rows="10"></textarea><br>
+          <button class="btn btn-outline-success addelement" type="button">Ajouter</button>
+       </form>
+      </div>
+            <!--La partie edit qui contient les zones de saisie necessaire pour modifier les informations de la ligne concerné-->
+      <div class="editevent">
+        <form>
+           <label >Nom du service :</label><input type="text" class="form-control name_edit"><br>
+           <label >description :</label><textarea class="form-control" id="description_edit" rows="10"></textarea><br>
+           <button class="btn btn-outline-success editelement" type="button">Editer</button>
+        </form>
+      </div>
+      <script src="./js/evenements.js"></script>
+  </body>
+</html>

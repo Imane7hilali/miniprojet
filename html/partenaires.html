@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script src="./js/jquery-3.6.0.slim.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>  
+        <link rel="stylesheet" href="./css/evenements.css">
+    </head>
+    
+    <body>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><div class="d-flex flex-row align-items-center pb-2">#</div></th>
+            <th scope="col"colspan="2">
+              <div class="d-flex flex-row align-items-center">
+                <div class="mr-3">Partenaires</div>
+              </div>
+            </th>
+
+            <th scope="col">
+              <div class=" d-flex justify-content-center">
+                <button type="button" class="btn btn-outline-success add">Ajouter</button>
+              </div>
+            </th>
+          </tr>
+        </thead>
+      
+        <tbody>
+          <tr>
+            <th scope="row"><span>1</span></th>
+            <td class="label">Alaska airlines</td>
+            <td class="resume">Alaska Airlines et ses partenaires régionaux desservent plus de 120 destinations à travers les États-Unis et vers le Mexique,
+                 le Canada, le Costa Rica et le Belize.</td>
+            <td class="d-flex justify-content-center">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <button type="button" class="btn btn-outline-danger remove">Supprimer</button>
+                <button type="button" class="btn btn-outline-secondary edit">Editer</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><span>2</span></th>
+            <td class="label">Cathay Pacific</td>
+            <td class="resume">Gagnez des miles Safar Flyer en voyageant sur les vols commercialisés et opérés par Cathay Pacific ainsi que ses vols 
+                en codeshare avec ses compagnies partenaires dans le cadre oneworld.</td>
+            <td class="d-flex justify-content-center">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <button type="button" class="btn btn-outline-danger remove">Supprimer</button>
+                <button type="button" class="btn btn-outline-secondary edit">Editer</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"><span>3</span></th>
+            <td class="label">American Airlines</td>
+            <td class="resume">American Airlines est fière de s’allier à Royal Air Maroc en tant que membre de l'alliance oneworld.
+                 Gagner des miles primes et miles statut pour chaque vol réalisé sur l’ensemble des 1100 destinations desservies.</td>
+            <td class="d-flex justify-content-center">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <button type="button" class="btn btn-outline-danger remove">Supprimer</button>
+                <button type="button" class="btn btn-outline-secondary edit">Editer</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+
+        </table>
+          <div class="addevent">
+            <form>
+                <label > Nom du partenaire : </label> <input type="text" class="form-control name"><br>
+                <label > Information :</label> <textarea class="form-control" id="description" rows="10"></textarea><br>
+                <button class="btn btn-outline-success addelement " type="button">Ajouter</button>
+            </form>
+          </div>
+          <div class="editevent">
+            <form>
+                 <label >Nom du partenaire :</label><input type="text" class="form-control name_edit"><br>
+                 <label >description :</label><textarea class="form-control" id="description_edit" rows="10"></textarea><br>
+                 <button class="btn btn-outline-success editelement " type="button">Editer</button>
+            </form>
+         </div>
+  
+         <script src="./js/evenements.js"></script>
+
+        </body>
+</html>

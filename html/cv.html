@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <script src="./js/jquery-3.6.0.slim.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" href="./css/evenements.css">
+    </head>
+<body>
+  
+<!--le tableau contenant les zones de saisie necessaire pour envoyer les informations et fichier necessaire d'un CV-->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"colspan="2">
+              <div class="d-flex flex-row align-items-center">
+                <div class="mr-3">Envoyer votre CV</div>
+                
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A..</td>
+            <td>  <input type="text" class="form-control" id="email" placeholder="Enter votre email"  name="email"></td>
+          </tr>
+          <tr>
+            <td>Cc..</td>
+            <td> <input type="email" class="form-control" id="email" placeholder="info@gmail.com" name="email"></td>
+          </tr>
+          <tr>
+            <td> Objet:</td>
+            <td><input type="text" class="form-control" id="lname" placeholder="Entrer votre sujet" name="lname"></td>
+          </tr>
+          <tr>
+            <td>Description:</td>
+            <td> <textarea class="form-control" rows="1" id="comment"></textarea></td>
+          </tr>
+          <tr>
+            <td>Importer le CV:</td>
+            <td>  <input type="file"id="inpfile"> </td>
+                
+                
+          </tr>
+          <tr>
+            <td></td>
+            <td> </td>
+            <td class="d-flex justify-content-center">
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <button type="submit" class="btn btn-outline-primary envoyer">Envoyer</button>
+              </div>
+            </td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+
+      <script src="./js/contact.js"></script>
+</body>
+</html>

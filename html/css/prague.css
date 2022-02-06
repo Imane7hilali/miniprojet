@@ -1,0 +1,12 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > img {
+width: 40%;
+margin: auto;
+}
+.slide {
+    margin-left: 20%;
+}
+body{
+    background-color:#f1f6f8;
+    font-family: cursive;
+}

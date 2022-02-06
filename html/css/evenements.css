@@ -1,0 +1,17 @@
+.table{
+    width: 70%;
+}
+body{
+    background-color:#f1f6f8;
+}
+.addevent{
+    display: none;
+    width: 75%;
+}
+.addelement{
+    margin-left: 90%;
+}
+.editevent{
+    display: none;
+    width: 75%;
+}

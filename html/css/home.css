@@ -1,0 +1,19 @@
+body{
+    font-family: cursive;
+    background-color:#daecff;
+    font-size:20px;
+   
+}
+body h1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+   
+
+}
+body h2 {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+
+}
